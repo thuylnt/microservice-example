@@ -1,0 +1,36 @@
+A - Chạy demo
+Eureka server http://localhost:8761/
+Config server http://localhost:8888/forex-service.properties
+
+Forex service http://localhost:8000/showConfig -> Test kết nối đến Config server
+	http://localhost:8000/currency-exchange/from/USD/to/INR
+
+Currency converter service
+	http://localhost:8100/currency-converter/from/EUR/to/INR/quantity/10000
+	http://localhost:8100/currency-converter-feign/from/EUR/to/INR/quantity/10000
+
+Zuul server http://localhost:8084/actuator/info
+		http://localhost:8084/my-forex/currency-exchange/from/USD/to/INR  => http://localhost:8000/currency-exchange/from/USD/to/INR
+		http://localhost:8084/my-currency-exchange/currency-converter-feign/from/EUR/to/INR/quantity/10000 => 	http://localhost:8100/currency-converter-feign/from/EUR/to/INR/quantity/10000
+
+B - Tài liệu
+http://www.springboottutorial.com/creating-microservices-with-spring-boot-part-2-forex-microservice
+Part 1 - Getting Started with Microservices Architecture
+Current Part - Part 2 - Creating Forex Microservice
+Part 3 - Creating Currency Conversion Microservice
+Part 4 - Using Ribbon for Load Balancing
+Part 5 - Using Eureka Naming Server
+
+
+Tham khảo thêm
+https://o7planning.org/vi/11701/spring-cloud
+Điện toán đám mây (Cloud Computing) là gì?
+Giới thiệu về Netflix và công nghệ điện toán đám mây của họ
+Giới thiệu về Amazon Web Services (AWS)
+Giới thiệu về Spring Cloud
+Tìm hiểu về Spring Cloud Config Server với ví dụ
+Tìm hiểu về Spring Cloud Config Client với ví dụ
+Tìm hiểu về Spring Cloud Eureka Server với ví dụ
+Tìm hiểu về Spring Cloud Discovery Eureka Client với ví dụ
+Tìm hiểu về cân bằng tải trong Spring Cloud với Ribbon và ví dụ
+

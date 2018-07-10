@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EmployeeZuulService" />
+        <module name="spring-boot-microservice-currency-conversion" />
+        <module name="spring-boot-microservice-eureka-naming-server" />
+        <module name="spring-boot-microservice-forex-service" />
+        <module name="SpringCloudConfigServer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="EmployeeZuluService" target="1.8" />
+      <module name="EmployeeZuulService" target="1.8" />
+      <module name="spring-boot-microservice-currency-conversion" target="1.8" />
+      <module name="spring-boot-microservice-eureka-naming-server" target="1.8" />
+      <module name="spring-boot-microservice-forex-service" target="1.8" />
+      <module name="SpringCloudConfigServer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
